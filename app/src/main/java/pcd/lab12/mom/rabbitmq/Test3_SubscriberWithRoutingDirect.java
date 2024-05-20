@@ -1,4 +1,4 @@
-package pcd.lab10.mom.rabbitmq;
+package pcd.lab12.mom.rabbitmq;
 import com.rabbitmq.client.*;
 
 public class Test3_SubscriberWithRoutingDirect {

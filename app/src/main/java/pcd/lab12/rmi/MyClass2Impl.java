@@ -1,4 +1,4 @@
-package pcd.lab10.rmi;
+package pcd.lab12.rmi;
 
 public class MyClass2Impl implements java.io.Serializable, MyClass2  {
 

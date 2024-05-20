@@ -1,4 +1,4 @@
-package pcd.lab10.rmi;
+package pcd.lab12.rmi;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

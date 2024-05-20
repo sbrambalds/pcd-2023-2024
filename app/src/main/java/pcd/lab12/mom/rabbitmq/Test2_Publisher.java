@@ -1,4 +1,4 @@
-package pcd.lab10.mom.rabbitmq;
+package pcd.lab12.mom.rabbitmq;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;

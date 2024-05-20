@@ -1,10 +1,10 @@
-package pcd.lab10.rmi;
+package pcd.lab12.rmi;
 
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.server.UnicastRemoteObject;
         
-public class Test02_Server2  {
+public class Test01_Server  {
                 
     public static void main(String args[]) {
         
@@ -12,9 +12,14 @@ public class Test02_Server2  {
             HelloService helloObj = new HelloServiceImpl();
             HelloService helloObjStub = (HelloService) UnicastRemoteObject.exportObject(helloObj, 0);
 
+            Counter count = new CounterImpl(0);
+            Counter countStub = (Counter) UnicastRemoteObject.exportObject(count, 0);
+            
             // Bind the remote object's stub in the registry
             Registry registry = LocateRegistry.getRegistry();
-            registry.rebind("helloObj2", helloObjStub);
+            
+            registry.rebind("helloObj", helloObjStub);
+            registry.rebind("countObj", countStub);
             
             System.out.println("Objects registered.");
         } catch (Exception e) {
