@@ -14,7 +14,7 @@ public class Test0_Recv {
 
 		Channel channel = connection.createChannel();
 
-		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+		channel.queueDeclare(QUEUE_NAME, false, false, false, null); // modo per dire al broker che voglio lavorare su una coda chiamata così
 		System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
 		DeliverCallback deliverCallback = (consumerTag, delivery) -> {
