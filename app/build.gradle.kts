@@ -30,7 +30,12 @@ dependencies {
     implementation("io.vertx:vertx-web-client:4.5.7")
        
     /* module 2.2 -- RxJava */
-    implementation("io.reactivex.rxjava3:rxjava:3.1.8")   
+    implementation("io.reactivex.rxjava3:rxjava:3.1.8")
+    // https://mvnrepository.com/artifact/com.rabbitmq/amqp-client
+    implementation("com.rabbitmq:amqp-client:5.21.0")
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation("org.jsoup:jsoup:1.17.2")
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
